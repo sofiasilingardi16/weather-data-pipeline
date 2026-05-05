@@ -31,3 +31,37 @@ Start PostgreSQL:
 
 ```bash
 docker compose up -d
+
+Install dependencies:
+
+pip install -r requirements.txt
+
+Run the pipeline:
+
+python3 src/main.py
+Database Table
+
+The main table is weather_hourly, containing:
+
+location name
+latitude
+longitude
+forecast timestamp
+temperature
+relative humidity
+wind speed
+loading timestamp
+Key Data Engineering Concepts
+API data ingestion
+JSON normalization
+Data cleaning
+PostgreSQL storage
+Dockerized database
+Idempotent loading with ON CONFLICT
+
+Poi salva e fai nel terminale:
+
+```bash
+git add README.md
+git commit -m "Add project README"
+git push
